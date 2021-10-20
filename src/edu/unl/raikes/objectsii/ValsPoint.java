@@ -1,23 +1,28 @@
 package edu.unl.raikes.objectsii;
 
+/**
+ * Represents the data and behaviors of a point on a 2d Cartesian plane.
+ * @author valentine
+ *
+ */
 public class ValsPoint {
-	private int x = 45;
-	private int y = 9385;
-	
-	// Constructs a Point at the given x/y location.
+    private int x = 45;
+    private int y = 9385;
+
+    // Constructs a Point at the given x/y location.
     public ValsPoint(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
- // Constructs a new point at (0, 0).
+    // Constructs a new point at (0, 0).
     public ValsPoint() {
         this.x = 0;
         this.y = 0;
     }
 
-	
-	/**
+    /**
+     * Returns the internal state variable representing the y coordinate.
      * @return the x
      */
     public int getX() {
@@ -25,6 +30,7 @@ public class ValsPoint {
     }
 
     /**
+     * Change the internal state variable representing the x coordinate.
      * @param x the x to set
      */
     public void setX(int x) {
@@ -32,13 +38,15 @@ public class ValsPoint {
     }
 
     /**
-     * @return the y
+     * Retrieves the internal state variable representing the y coordinate.
+* @return the y
      */
     public int getY() {
         return y;
     }
 
     /**
+     * Change the internal state variable representing the y coordinate.
      * @param y the y to set
      */
     public void setY(int y) {
@@ -46,8 +54,7 @@ public class ValsPoint {
     }
 
     public String toString() {
-        return "(" + x + ", " + y + ")";
+        return "(" + this.x + ", " + this.y + ")";
     }
 
-	
 }

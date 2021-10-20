@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="false">
+  <local-check-config name="RAIK Style Guide for Program Files - Remote" location="https://raw.githubusercontent.com/raik183h-master/RAIK-Style-Guide/main/raik-style.xml" type="remote" description="">
+    <additional-data name="cache-file" value="false"/>
+  </local-check-config>
+  <local-check-config name="RAIK Style Guide for Test Files - Remote" location="https://raw.githubusercontent.com/raik183h-master/RAIK-Style-Guide/main/raik-test-style.xml" type="remote" description="">
+    <additional-data name="cache-file" value="false"/>
+  </local-check-config>
+  <fileset name="Test Files" enabled="true" check-config-name="RAIK Style Guide for Test Files - Remote" local="true">
+    <file-match-pattern match-pattern="Test.java$" include-pattern="true"/>
+  </fileset>
+  <fileset name="Program Files" enabled="true" check-config-name="RAIK Style Guide for Program Files - Remote" local="true">
+    <file-match-pattern match-pattern=".*(?&lt;!Test)\.java$" include-pattern="true"/>
+  </fileset>
+</fileset-config>
