@@ -1,0 +1,3 @@
+CT 56 31 7 U. of Connecticut
+NE 37 56 5 Creighton
+AZ 41 49 10 Northern Arizona U.
