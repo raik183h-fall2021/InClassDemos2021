@@ -35,7 +35,7 @@ public class Election {
             fileScanner.nextLine();
         }
 
-        System.out.printf("Biden votes:%d\nTrump votes:%d", totalBidenVotes,totalTrumpVotes);
-    fileScanner.close();
+        System.out.printf("Biden votes:%d\nTrump votes:%d", totalBidenVotes, totalTrumpVotes);
+        fileScanner.close();
     }
 }
