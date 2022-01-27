@@ -13,7 +13,7 @@ public class HuskerHeroesDrink extends HuskerHeroesFood{
     }
 
     
-    public void consume() {
-        System.out.print("shlurp, shlurp");
+    public void consume(Object eater) {
+        System.out.println("shlurp, shlurp"+ eater + " ate me!");
     }
 }

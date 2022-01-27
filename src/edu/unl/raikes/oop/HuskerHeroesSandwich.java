@@ -43,9 +43,10 @@ public class HuskerHeroesSandwich extends HuskerHeroesFood {
         return s;
     }
 
-    
-    public void consume() {
-        System.out.print("munch, nom, munch");
-        
+
+    @Override
+    public void consume(Object eater) {
+        // TODO Auto-generated method stub
+        System.out.println(" munch, nom, munch" + eater + " ate me!");  
     }
 }

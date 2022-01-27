@@ -1,5 +1,7 @@
 package edu.unl.raikes.oop;
 
+import java.util.ArrayList;
+
 public class HuskerHeroesMain {
 
 
@@ -18,16 +20,19 @@ public class HuskerHeroesMain {
         // order another milkshake (duh)
         HuskerHeroesFood m2 = new HuskerHeroesMilkshake(5);
         
-        order.items.add(sandwich);
-        order.items.add(chips);
-        order.items.add(drink);
-        order.items.add(m1);
-        order.items.add(m2);
+        ArrayList<Edible> eds = new ArrayList<Edible>();
+        eds.add(m2);
+        eds.add(m1);
+        eds.add(drink);
+        eds.add(sandwich);
+        eds.add(chips);
+        eds.add(new HurtsDonut());
         
         System.out.println(order);
+        Jace jace = new Jace();
         
-        for(int i=0;i<order.items.size();i++){
-            order.items.get(i).consume();
+        for(int i=0;i<eds.size();i++){
+            eds.get(i).consume(jace);
         }
     }
 }

@@ -1,6 +1,6 @@
 package edu.unl.raikes.oop;
 
-public abstract class HuskerHeroesFood {
+public abstract class HuskerHeroesFood implements Edible{
     private int calories;
     // calories?
     
@@ -16,7 +16,7 @@ public abstract class HuskerHeroesFood {
         this.calories = calories;
     }
     
-    public abstract void consume();
+    //public abstract void consume();
     
     public String toString() {
         return "Yummy! I have "+calories+" calories.";

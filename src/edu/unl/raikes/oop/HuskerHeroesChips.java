@@ -15,7 +15,7 @@ public class HuskerHeroesChips extends HuskerHeroesFood{
 
 
 
-    public void consume() {
-        System.out.print("cruch, crunch");
+    public void consume(Object eater) {
+        System.out.println("cruch, crunch"+ eater + " ate me!");
     }
 }
